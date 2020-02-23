@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zhs.dao.PerformerDao">
+<mapper namespace="com.sxx.dao.PerformerDao">
 
-    <resultMap type="com.zhs.entity.Performer" id="PerformerMap">
+    <resultMap type="com.sxx.entity.Performer" id="PerformerMap">
         <result property="id" column="id" jdbcType="INTEGER"/>
         <result property="name" column="name" jdbcType="VARCHAR"/>
         <result property="mobile" column="mobile" jdbcType="VARCHAR"/>
         <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
         <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
-        <collection  property="messageList" column="id" javaType="java.util.List" ofType="com.zhs.entity.Message" select="com.zhs.dao.PerformProgramDao.selectAllByPerformId"/>
+        <collection property="messageList" column="id" javaType="java.util.List" ofType="com.sxx.entity.Message" select="com.sxx.dao.PerformProgramDao.selectAllByPerformId"/>
     </resultMap>
 
     <!--查询单个-->
