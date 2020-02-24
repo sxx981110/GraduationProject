@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 演员-节目关系表(PerformProgram)表数据库访问层
  *
- * @author makejava
+ * @author sunxinxin
  * @since 2020-02-16 14:22:07
  */
 public interface PerformProgramDao {
