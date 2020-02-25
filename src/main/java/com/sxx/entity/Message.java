@@ -12,7 +12,7 @@ import java.util.List;
 /**
  * 节目信息表(Message)实体类
  *
- * @author makejava
+ * @author sxx
  * @since 2020-02-16 14:31:34
  */
 @Data
