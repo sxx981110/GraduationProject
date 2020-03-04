@@ -14,18 +14,6 @@
 			}]
 		},
 		{
-			"id": 8,
-			"name": "节目管理",
-			"icon": "&#xe705;",
-			"url": "",
-			"children": [{
-				"id": 9,
-				"name": "节目列表",
-				"icon": "",
-				"url": "./pages/message/list.html"
-			}]
-		},
-		{
 			"id": 11,
 			"name": "演员管理",
 			"icon": "&#xe723;",
@@ -35,6 +23,18 @@
 				"name": "演员列表",
 				"icon": "",
 				"url": "./pages/performer/list.html"
+			}]
+		},
+		{
+			"id": 8,
+			"name": "节目管理",
+			"icon": "&#xe705;",
+			"url": "",
+			"children": [{
+				"id": 9,
+				"name": "节目列表",
+				"icon": "",
+				"url": "./pages/message/list.html"
 			}]
 		},
 		{
