@@ -73,4 +73,16 @@ public interface PerformProgramService {
      * @param perId 演员id
      */
     void deleteByProIdAndPerId(Integer proId,Integer perId);
+
+    /**
+     * 通过节目id删除数据
+     * @param proId
+     */
+    void deleteByProId(Integer proId);
+
+    /**
+     * 通过演员id删除数据
+     * @param preId
+     */
+    void deleteByPerId(Integer preId);
 }

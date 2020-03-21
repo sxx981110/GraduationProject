@@ -97,4 +97,14 @@ public class PerformProgramServiceImpl implements PerformProgramService {
     public void deleteByProIdAndPerId(Integer proId, Integer perId) {
         performProgramDao.deleteByProIdAndPerId(proId,perId);
     }
+
+    @Override
+    public void deleteByProId(Integer proId) {
+        performProgramDao.deleteByProgramId(proId);
+    }
+
+    @Override
+    public void deleteByPerId(Integer preId) {
+        performProgramDao.deleteByPerformId(preId);
+    }
 }

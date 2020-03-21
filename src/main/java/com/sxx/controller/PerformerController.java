@@ -59,11 +59,13 @@ public class PerformerController {
     }
     @RequestMapping("delete")
     public void delete(Integer id){
+        performProgramService.deleteByPerId(id);
         performerService.deleteById(id);
     }
     @RequestMapping("deleteByIds")
     public void deleteByIds(@RequestParam(value = "ids[]")List<Integer> ids){
         for (Integer id : ids) {
+            performProgramService.deleteByPerId(id);
             performerService.deleteById(id);
         }
     }
