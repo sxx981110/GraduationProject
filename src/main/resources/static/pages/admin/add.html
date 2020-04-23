@@ -24,7 +24,7 @@
                   <span class="we-red">*</span>登录名
               </label>
               <div class="layui-input-inline">
-                  <input type="text" id="username" name="username" required="" lay-verify="required"
+                  <input type="text" id="username" name="username" required="" lay-verify="username"
                   autocomplete="off" class="layui-input">
               </div>
               <div class="layui-form-mid layui-word-aux">
@@ -36,7 +36,7 @@
                   <span class="we-red">*</span>密码
               </label>
               <div class="layui-input-inline">
-                  <input type="password" id="L_pass" name="pass" required="" lay-verify="pass"
+                  <input type="password" id="L_pass" name="password" required="" lay-verify="password"
                   autocomplete="off" class="layui-input">
               </div>
               <div class="layui-form-mid layui-word-aux">
@@ -71,7 +71,7 @@
           	form.render();
           //自定义验证规则
           form.verify({
-            nikename: function(value){
+              username: function(value){
               if(value.length < 5){
                 return '昵称至少得5个字符啊';
               }

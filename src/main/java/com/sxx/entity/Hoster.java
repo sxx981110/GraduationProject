@@ -8,7 +8,7 @@ import java.io.Serializable;
 /**
  * 主持人信息表(Hoster)实体类
  *
- * @author makejava
+ * @author sxx
  * @since 2020-02-16 14:21:17
  */
 public class Hoster implements Serializable {

@@ -4,6 +4,7 @@ import com.sxx.entity.Performer;
 import com.sxx.util.EasyExcelUtil;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.junit.jupiter.api.Test;
+import org.junit.platform.commons.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -24,7 +25,10 @@ public class TestUtils {
     @Test
     public void test(){
         String admintest12 = DigestUtils.md5Hex("admintest12");
+        String admintest13 = DigestUtils.md5Hex("admintest12");
         System.out.println(admintest12);
+        System.out.println(admintest13);
+        System.out.println(admintest12.equals(admintest13));
     }
     @Test
     public void testExcel() throws FileNotFoundException {

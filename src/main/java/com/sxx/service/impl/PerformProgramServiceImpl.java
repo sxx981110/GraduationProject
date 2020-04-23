@@ -13,7 +13,7 @@ import java.util.Objects;
 /**
  * 演员-节目关系表(PerformProgram)表服务实现类
  *
- * @author makejava
+ * @author sxx
  * @since 2020-02-16 14:22:07
  */
 @Service("performProgramService")
@@ -96,5 +96,15 @@ public class PerformProgramServiceImpl implements PerformProgramService {
     @Override
     public void deleteByProIdAndPerId(Integer proId, Integer perId) {
         performProgramDao.deleteByProIdAndPerId(proId,perId);
+    }
+
+    @Override
+    public void deleteByProId(Integer proId) {
+        performProgramDao.deleteByProgramId(proId);
+    }
+
+    @Override
+    public void deleteByPerId(Integer preId) {
+        performProgramDao.deleteByPerformId(preId);
     }
 }

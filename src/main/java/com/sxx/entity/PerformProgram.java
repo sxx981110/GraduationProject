@@ -6,7 +6,7 @@ import java.io.Serializable;
 /**
  * 演员-节目关系表(PerformProgram)实体类
  *
- * @author makejava
+ * @author sxx
  * @since 2020-02-16 14:22:07
  */
 public class PerformProgram implements Serializable {

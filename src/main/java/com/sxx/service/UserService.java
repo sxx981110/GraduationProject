@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * (User)表服务接口
  *
- * @author makejava
+ * @author sxx
  * @since 2020-02-16 14:22:44
  */
 public interface UserService {
